@@ -1,0 +1,95 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background: grey;
+}
+#whole-div{
+    background: white;
+    width: 450px;
+    margin:  200px auto 0 auto;
+    border: black 2px solid;
+    box-shadow: 10px 12px 10px black;
+}
+#btn-div{
+    display: flex;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+button{
+    width: 150px;
+    height: 90px;
+    margin: auto;
+    font-size: 80px;
+    background: royalblue;
+    border: black 2px solid;
+}
+button:hover{
+    background: cornflowerblue;
+    transform: scale(1.1);
+}
+p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 50px;
+    width: 110vw;
+    margin: none;
+    background: black;
+    color: white;
+}
+footer p{
+    text-align: left;
+    font-size: 20px;
+    margin: 20px;
+}
+h1:hover{
+    transform: scale(1.1);
+}
+
+footer p:hover{
+    animation-duration: 4s ;
+    animation-name: text-color-animation;
+    animation-iteration-count: infinite;
+}
+#links{
+    width: 450px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+
+}
+a{
+    font-size: 20px;
+    padding: 20px 30px;
+    background: white;
+    text-decoration: none;
+    color: black;
+    border: black 2px solid;
+    box-shadow: 3px 3px 8px black;
+    
+}
+a:hover{
+    background: gray;
+    
+}
+@keyframes text-color-animation {
+
+    33%{
+        color: red;
+    }
+    66%{
+        color: blue;
+    }
+    to{
+        color:green;
+    }
+}

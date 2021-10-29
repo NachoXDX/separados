@@ -1,0 +1,113 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background: gray;
+}
+#main{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: black 7px 8px 8px;
+    border: black 2px solid;
+    
+}
+#settings{
+    display: none;
+}
+#user{
+    display: none;
+}
+#user-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.grid-item{
+    margin-top: 20px;
+    width: 50%;
+}
+#reference{
+    display: none;
+}
+
+#settings, #user, #reference, #move{
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    border: black solid 1px;
+}
+img{
+    width: 60px;
+    display: block;
+    
+}
+#nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+    border-right:black solid 2px ;
+}
+#links{
+    width: 450px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+a{
+    font-size: 20px;
+    padding: 20px 30px;
+    background: white;
+    text-decoration: none;
+    color: black;
+    border: black 2px solid;
+    box-shadow: 3px 3px 8px black;
+}
+a:hover{
+    background: gray;
+    
+}
+h2{
+    padding-bottom: 15px;
+    border-bottom: 2px solid black
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 50px;
+    width: 110vw;
+    margin: none;
+    background: black;
+    color: white;
+}
+footer p{
+    text-align: left;
+    font-size: 20px;
+    margin: 20px;
+}
+footer p:hover{
+    animation-duration: 4s ;
+    animation-name: text-color-animation;
+    animation-iteration-count: infinite;
+}
+@keyframes text-color-animation {
+
+    33%{
+        color: red;
+    }
+    66%{
+        color: blue;
+    }
+    to{
+        color:green;
+    }
+}
